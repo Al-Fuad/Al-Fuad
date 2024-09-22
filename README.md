@@ -12,16 +12,10 @@ I'm currently pursuing a **BSc in Software Engineering** at Daffodil Internation
 
 ### ⚡ Featured Skills
 - **Languages & Frameworks**:  
-  ![Dart](https://img.shields.io/badge/-Dart-blue?style=flat-square&logo=dart)  
-  ![Flutter](https://img.shields.io/badge/-Flutter-blue?style=flat-square&logo=flutter)  
-  ![BLoC](https://img.shields.io/badge/-BLoC-yellowgreen?style=flat-square)  
-  ![C](https://img.shields.io/badge/-C-black?style=flat-square&logo=c)  
-  ![Java](https://img.shields.io/badge/-Java-red?style=flat-square&logo=java)  
-  ![Arduino](https://img.shields.io/badge/-Arduino-blue?style=flat-square&logo=arduino)
+  ![Dart](https://img.shields.io/badge/-Dart-blue?style=flat-square&logo=dart)  ![Flutter](https://img.shields.io/badge/-Flutter-blue?style=flat-square&logo=flutter)  ![BLoC](https://img.shields.io/badge/-BLoC-yellowgreen?style=flat-square)  ![C](https://img.shields.io/badge/-C-black?style=flat-square&logo=c)  ![Java](https://img.shields.io/badge/-Java-red?style=flat-square&logo=java)  ![Arduino](https://img.shields.io/badge/-Arduino-blue?style=flat-square&logo=arduino)
 
 - **IDEs & Tools**:  
-  ![VS Code](https://img.shields.io/badge/-VSCode-blue?style=flat-square&logo=visual-studio-code)  
-  ![Android Studio](https://img.shields.io/badge/-Android%20Studio-green?style=flat-square&logo=android-studio)
+  ![VS Code](https://img.shields.io/badge/-VSCode-blue?style=flat-square&logo=visual-studio-code)  ![Android Studio](https://img.shields.io/badge/-Android%20Studio-green?style=flat-square&logo=android-studio)
 
 ### 🚀 Current Learning Goals
 - **SwiftUI** and **Native App Development**
