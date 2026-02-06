@@ -238,7 +238,7 @@ const Hero = () => (
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.1 }}
-      className="text-6xl md:text-8xl font-black text-white leading-[0.9] tracking-tighter mb-6 uppercase"
+      className="text-5xl md:text-8xl font-black text-white leading-[0.9] tracking-tighter mb-6 uppercase"
     >
       S. M. AL FUAD<br />
       <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-500">NUR.</span>
