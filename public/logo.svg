@@ -1,0 +1,30 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main Parallelogram Container -->
+  <path d="M120 100H450L380 400H50L120 100Z" fill="#020617" stroke="#22D3EE" stroke-width="12" stroke-linejoin="round"/>
+  
+  <!-- Internal Glow/Offset Path -->
+  <path d="M135 120H430L365 380H70L135 120Z" stroke="#22D3EE" stroke-width="2" stroke-opacity="0.3"/>
+
+  <!-- Top-Right Technical Detail (Circuit Node) -->
+  <circle cx="450" cy="100" r="10" fill="#22D3EE" />
+  <path d="M450 100L480 70" stroke="#22D3EE" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Bottom-Left Technical Detail (Circuit Node) -->
+  <circle cx="50" cy="400" r="10" fill="#22D3EE" />
+  <path d="M50 400L20 430" stroke="#22D3EE" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- The "N" Logo (Centered and Skewed to match) -->
+  <g transform="translate(180, 180) scale(1.6)">
+    <!-- Skewed Negative Space 'N' -->
+    <path d="M20 80V20H35L60 60V20H75V80H60L35 40V80H20Z" fill="#22D3EE"/>
+  </g>
+
+  <!-- "SWE" Indicator Block (Bottom Right Corner) -->
+  <g transform="translate(320, 330)">
+    <path d="M10 0H90L80 40H0L10 0Z" fill="#22D3EE"/>
+    <text x="18" y="27" fill="#020617" font-family="monospace" font-weight="900" font-size="20">.SWE</text>
+  </g>
+  
+  <!-- Decorative Grid Lines (Inside Parallelogram) -->
+  <path d="M150 100L80 400M200 100L130 400M400 100L330 400" stroke="#22D3EE" stroke-width="1" stroke-opacity="0.1"/>
+</svg>
