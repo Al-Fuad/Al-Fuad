@@ -201,7 +201,7 @@ const Navbar = () => {
             className="md:hidden bg-[#020617] border-b border-cyan-900/30 overflow-hidden absolute w-full left-0 top-full z-40"
           >
             <div className="flex flex-col p-8 gap-6 shadow-2xl">
-              {['About', 'Security', 'Projects', 'History', 'Contact'].map((item) => (
+              {['About', 'Skills', 'Projects', 'History', 'Contact'].map((item) => (
                 <a 
                   key={item} 
                   href={`#${item.toLowerCase()}`}
@@ -273,7 +273,7 @@ const Hero = () => (
 );
 
 const SkillGrid = () => (
-  <section id="security" className="py-32 px-8 max-w-7xl mx-auto">
+  <section id="skills" className="py-32 px-8 max-w-7xl mx-auto">
     <SectionHeader 
       title="Security Intelligence" 
       code="SKILL_DECRYPT" 
