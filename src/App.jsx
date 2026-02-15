@@ -423,7 +423,7 @@ const Contact = () => (
       </p>
       
       <div className="flex flex-col md:flex-row justify-center items-center gap-6">
-        <a href="mailto:alfuad.swe@gmail.com" className="w-full md:w-auto px-12 py-5 bg-cyan-500 text-slate-950 font-black uppercase tracking-tighter hover:bg-white transition-all">
+        <a href="mailto:contact@alfuad.me" className="w-full md:w-auto px-12 py-5 bg-cyan-500 text-slate-950 font-black uppercase tracking-tighter hover:bg-white transition-all">
           Open Channel
         </a>
         <div className="flex gap-4">

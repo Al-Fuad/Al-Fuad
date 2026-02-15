@@ -23,6 +23,6 @@ I'm currently pursuing a **BSc in Software Engineering** at Daffodil Internation
 - **Cybersecurity**
 
 ### 📫 Get in Touch
-- **Email**: smalfuadnur@gmail.com
+- **Email**: contact@alfuad.me
 - [**LinkedIn**](https://www.linkedin.com/in/alfuad/)
 - [**Facebook**](https://www.facebook.com/smalfuadnur)
