@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
-import { 
-  Github, 
-  Linkedin, 
-  Mail, 
-  ExternalLink, 
-  Code2, 
-  Smartphone, 
-  ShieldCheck, 
-  Menu, 
-  X, 
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ExternalLink,
+  Code2,
+  Smartphone,
+  ShieldCheck,
+  Menu,
+  X,
   Download,
   ChevronRight,
   Terminal,
@@ -121,14 +121,14 @@ const ScrollProgress = () => {
 const CyberBackground = () => (
   <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none bg-[#020617]">
     {/* Animated scanning line */}
-    <motion.div 
+    <motion.div
       animate={{ top: ['-10%', '110%'] }}
       transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
       className="absolute left-0 right-0 h-[2px] bg-cyan-500/10 shadow-[0_0_15px_rgba(34,211,238,0.2)] z-10"
     />
     {/* Subtle Grid */}
-    <div className="absolute inset-0 opacity-[0.05]" 
-         style={{backgroundImage: 'linear-gradient(#22d3ee 1px, transparent 1px), linear-gradient(90deg, #22d3ee 1px, transparent 1px)', backgroundSize: '50px 50px'}}>
+    <div className="absolute inset-0 opacity-[0.05]"
+      style={{ backgroundImage: 'linear-gradient(#22d3ee 1px, transparent 1px), linear-gradient(90deg, #22d3ee 1px, transparent 1px)', backgroundSize: '50px 50px' }}>
     </div>
     {/* Vignette */}
     <div className="absolute inset-0 bg-radial-gradient(circle, transparent 0%, #020617 90%)"></div>
@@ -177,13 +177,13 @@ const Navbar = () => {
               {item}
             </a>
           ))}
-          <button className="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-6 py-2 rounded-sm font-bold text-xs uppercase tracking-tighter transition-all flex items-center gap-2">
+          <a href="https://drive.google.com/uc?export=download&id=1y8pbtnGKlb8Zfs3Bl7hOHOD3iGT7Htp5" className="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-6 py-2 rounded-sm font-bold text-xs uppercase tracking-tighter transition-all flex items-center gap-2">
             <Download size={14} /> Resume.pdf
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button 
+        <button
           className="md:hidden text-cyan-500 hover:text-white transition-colors"
           onClick={() => setIsOpen(!isOpen)}
         >
@@ -202,19 +202,19 @@ const Navbar = () => {
           >
             <div className="flex flex-col p-8 gap-6 shadow-2xl">
               {['About', 'Skills', 'Projects', 'History', 'Contact'].map((item) => (
-                <a 
-                  key={item} 
+                <a
+                  key={item}
                   href={`#${item.toLowerCase()}`}
                   onClick={() => setIsOpen(false)}
                   className="text-slate-400 hover:text-cyan-400 font-mono text-sm uppercase tracking-widest flex items-center gap-2"
                 >
-                  <ChevronRight size={12} className="text-cyan-500"/> {item}
+                  <ChevronRight size={12} className="text-cyan-500" /> {item}
                 </a>
               ))}
               <div className="h-[1px] bg-slate-800 my-2"></div>
-              <button className="bg-cyan-500 text-slate-950 px-6 py-4 rounded-sm font-bold text-sm uppercase tracking-tighter flex items-center justify-center gap-2 w-full hover:bg-white transition-colors">
+              <a href="https://drive.google.com/uc?export=download&id=1y8pbtnGKlb8Zfs3Bl7hOHOD3iGT7Htp5" className="bg-cyan-500 text-slate-950 px-6 py-4 rounded-sm font-bold text-sm uppercase tracking-tighter flex items-center justify-center gap-2 w-full hover:bg-white transition-colors">
                 <Download size={16} /> Download Resume
-              </button>
+              </a>
             </div>
           </motion.div>
         )}
@@ -234,7 +234,7 @@ const Hero = () => (
       System Status: Secure & Online
     </motion.div>
 
-    <motion.h1 
+    <motion.h1
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.1 }}
@@ -250,12 +250,12 @@ const Hero = () => (
       transition={{ delay: 0.2 }}
       className="max-w-2xl text-slate-400 text-lg md:text-xl font-mono leading-relaxed mb-12"
     >
-      Bridging the gap between <span className="text-cyan-400 italic">User Experience</span> and 
-      <span className="text-white font-bold"> Digital Fortification.</span> 
+      Bridging the gap between <span className="text-cyan-400 italic">User Experience</span> and
+      <span className="text-white font-bold"> Digital Fortification.</span>
       Flutter Engineer specialized in Mobile App Security & RASP.
     </motion.p>
 
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3 }}
@@ -274,9 +274,9 @@ const Hero = () => (
 
 const SkillGrid = () => (
   <section id="skills" className="py-32 px-8 max-w-7xl mx-auto">
-    <SectionHeader 
-      title="Security Intelligence" 
-      code="SKILL_DECRYPT" 
+    <SectionHeader
+      title="Security Intelligence"
+      code="SKILL_DECRYPT"
       subtitle="Comprehensive technical stack focusing on robust development and defensive engineering."
     />
     <div className="grid md:grid-cols-3 gap-6">
@@ -319,14 +319,14 @@ const ProjectBento = () => (
         >
           {/* Blurry Background Image */}
           <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
-             <div className="absolute inset-0 bg-[#020617]/80 group-hover:bg-[#020617]/70 transition-all duration-500 z-10" />
-             <img 
-               src={proj.image} 
-               alt={proj.title}
-               className="w-full h-full object-cover blur-sm opacity-50 grayscale group-hover:scale-110 group-hover:blur-[2px] transition-all duration-700" 
-             />
+            <div className="absolute inset-0 bg-[#020617]/80 group-hover:bg-[#020617]/70 transition-all duration-500 z-10" />
+            <img
+              src={proj.image}
+              alt={proj.title}
+              className="w-full h-full object-cover blur-sm opacity-50 grayscale group-hover:scale-110 group-hover:blur-[2px] transition-all duration-700"
+            />
           </div>
-          
+
           <div className="relative z-20">
             <div className="flex gap-2 mb-4">
               {proj.tags.map(t => (
@@ -339,18 +339,18 @@ const ProjectBento = () => (
               {proj.title}
             </h4>
             <p className="text-slate-300 text-sm font-mono line-clamp-2 mb-6 drop-shadow-md">{proj.description}</p>
-            
+
             {/* Buttons */}
             <div className="flex gap-3 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-               <a href={proj.github} className="flex items-center gap-2 px-4 py-2 bg-slate-900 border border-slate-700 hover:border-cyan-500 text-xs font-bold uppercase tracking-wider text-white transition-colors">
-                  <Github size={14} /> Source
-               </a>
-               <a href={proj.demo} className="flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-900 text-xs font-bold uppercase tracking-wider text-cyan-400 transition-colors">
-                  <ExternalLink size={14} /> Demo
-               </a>
+              <a href={proj.github} className="flex items-center gap-2 px-4 py-2 bg-slate-900 border border-slate-700 hover:border-cyan-500 text-xs font-bold uppercase tracking-wider text-white transition-colors">
+                <Github size={14} /> Source
+              </a>
+              <a href={proj.demo} className="flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-900 text-xs font-bold uppercase tracking-wider text-cyan-400 transition-colors">
+                <ExternalLink size={14} /> Demo
+              </a>
             </div>
           </div>
-          
+
           {/* Accent line */}
           <div className="absolute bottom-0 left-0 h-1 w-0 bg-cyan-500 group-hover:w-full transition-all duration-500 z-30"></div>
         </motion.div>
@@ -362,7 +362,7 @@ const ProjectBento = () => (
 const ExperienceTimeline = () => (
   <section id="history" className="py-32 px-8 max-w-6xl mx-auto">
     <div className="grid md:grid-cols-2 gap-16">
-      
+
       {/* Experience Column */}
       <div>
         <div className="flex items-center gap-3 mb-10">
@@ -413,7 +413,7 @@ const Contact = () => (
   <section id="contact" className="py-32 px-8 max-w-7xl mx-auto">
     <div className="bg-slate-900/50 border border-slate-800 p-12 md:p-20 relative overflow-hidden text-center">
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
-      
+
       <h2 className="text-4xl md:text-6xl font-black text-white mb-6 uppercase tracking-tighter italic">
         Ready to build<br />
         <span className="text-cyan-500">Securely?</span>
@@ -421,7 +421,7 @@ const Contact = () => (
       <p className="text-slate-400 font-mono max-w-xl mx-auto mb-12">
         Let's collaborate on high-performance secure mobile application.
       </p>
-      
+
       <div className="flex flex-col md:flex-row justify-center items-center gap-6">
         <a href="mailto:contact@alfuad.me" className="w-full md:w-auto px-12 py-5 bg-cyan-500 text-slate-950 font-black uppercase tracking-tighter hover:bg-white transition-all">
           Open Channel
@@ -439,11 +439,11 @@ const Footer = () => (
   <footer className="py-12 border-t border-slate-900 px-8 bg-[#020617] relative z-10">
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
       <div className="text-slate-600 font-mono text-[10px] uppercase tracking-[0.3em] text-center md:text-left">
-        © 2024 S.M. AL FUAD NUR // ALL RIGHTS RESERVED
+        © 2026 S.M. AL FUAD NUR // ALL RIGHTS RESERVED
       </div>
       <div className="flex gap-8 text-slate-500 font-mono text-[10px] uppercase">
-        <span className="flex items-center gap-2"><Lock size={12}/> Encrypted Connection</span>
-        <span className="flex items-center gap-2"><Zap size={12}/> V2.0.4-Build</span>
+        <span className="flex items-center gap-2"><Lock size={12} /> Encrypted Connection</span>
+        <span className="flex items-center gap-2"><Zap size={12} /> V2.0.4-Build</span>
       </div>
     </div>
   </footer>
@@ -455,18 +455,18 @@ export default function App() {
       <ScrollProgress />
       <CyberBackground />
       <Navbar />
-      
+
       <main className="relative z-10 overflow-hidden">
         <Hero />
-        
+
         {/* About Summary - High Contrast */}
         <section id="about" className="py-32 px-8 bg-white/5 border-y border-white/5 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
             <div className="relative">
               <div className="absolute -top-10 -left-10 text-slate-800 font-black text-9xl opacity-20 pointer-events-none">01</div>
-              <h3 className="text-3xl font-black text-white uppercase mb-8 leading-none">The Engineer<br/>The Defender.</h3>
+              <h3 className="text-3xl font-black text-white uppercase mb-8 leading-none">The Engineer<br />The Defender.</h3>
               <p className="text-slate-400 font-mono text-sm leading-relaxed mb-6">
-                With a rigorous background in Software Engineering from <span className="text-cyan-400">Daffodil International University</span>, 
+                With a rigorous background in Software Engineering from <span className="text-cyan-400">Daffodil International University</span>,
                 I treat code as a living architecture that must be both elegant and impenetrable.
               </p>
               <div className="h-0.5 w-20 bg-cyan-500"></div>
@@ -489,7 +489,7 @@ export default function App() {
         <ExperienceTimeline />
         <Contact />
       </main>
-      
+
       <Footer />
     </div>
   );
