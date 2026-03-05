@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 import {
   Github,
@@ -44,14 +44,14 @@ const DATA = {
       demo: "https://github.com/Al-Fuad/e_commerce_with_flutter"
     },
     {
-      title: "Securely",
-      type: "Flutter Plugin for Security",
-      description: "An open-source Flutter plugin that implements runtime self-protection to detect rooted devices and debugger attachments.",
-      tags: ["Dart", "RASP", "Swift", "Kotlin"],
+      title: "Flutter Packages/Plugins",
+      type: "Packages/Plugins",
+      description: "A collection of Flutter packages/plugins.",
+      tags: ["Dart", "Flutter", "Swift", "Kotlin"],
       size: "medium",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1000&auto=format&fit=crop",
-      github: "https://github.com/Al-Fuad/Securely",
-      demo: "https://pub.dev/packages/securely"
+      image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1000&auto=format&fit=crop",
+      github: "https://github.com/Al-Fuad/Packages/tree/main/flutter",
+      demo: "https://pub.dev/publishers/alfuad.me/packages"
     },
     {
       title: "Enterprise ERP",
@@ -103,12 +103,6 @@ const DATA = {
 };
 
 // --- STYLES ---
-const colors = {
-  bg: "#020617", // Deeper black
-  card: "#0f172a", // Darker card
-  accent: "#22d3ee", // Vibrant cyan
-  glow: "rgba(34, 211, 238, 0.3)"
-};
 
 // --- COMPONENTS ---
 
@@ -311,10 +305,10 @@ const ProjectBento = () => (
         <motion.div
           key={i}
           whileHover={{ scale: 0.98 }}
-          className={`relative bg-[#0f172a] border border-slate-800 p-8 flex flex-col justify-end group overflow-hidden
-            ${proj.size === 'large' ? 'md:col-span-8 md:row-span-2 min-h-[450px]' : ''}
-            ${proj.size === 'medium' ? 'md:col-span-4 md:row-span-2 min-h-[450px]' : ''}
-            ${proj.size === 'small' ? 'md:col-span-4 min-h-[300px]' : ''}
+          className={`relative bg-[#0f172a] border border-slate-800 p-8 flex flex-col justify-end group overflow-hidden min-h-[300px]
+            ${proj.size === 'large' ? 'md:col-span-8 md:row-span-2 md:min-h-[450px]' : ''}
+            ${proj.size === 'medium' ? 'md:col-span-4 md:row-span-2 md:min-h-[450px]' : ''}
+            ${proj.size === 'small' ? 'md:col-span-4' : ''}
           `}
         >
           {/* Blurry Background Image */}
@@ -341,7 +335,7 @@ const ProjectBento = () => (
             <p className="text-slate-300 text-sm font-mono line-clamp-2 mb-6 drop-shadow-md">{proj.description}</p>
 
             {/* Buttons */}
-            <div className="flex gap-3 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+            <div className="flex gap-3 opacity-100 md:opacity-0 translate-y-0 md:translate-y-4 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-300">
               <a href={proj.github} className="flex items-center gap-2 px-4 py-2 bg-slate-900 border border-slate-700 hover:border-cyan-500 text-xs font-bold uppercase tracking-wider text-white transition-colors">
                 <Github size={14} /> Source
               </a>
@@ -443,7 +437,7 @@ const Footer = () => (
       </div>
       <div className="flex gap-8 text-slate-500 font-mono text-[10px] uppercase">
         <span className="flex items-center gap-2"><Lock size={12} /> Encrypted Connection</span>
-        <span className="flex items-center gap-2"><Zap size={12} /> V2.0.4-Build</span>
+        <span className="flex items-center gap-2"><Zap size={12} /> V2.0.5-Build</span>
       </div>
     </div>
   </footer>
