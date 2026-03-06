@@ -88,7 +88,7 @@ const DATA = {
     {
       company: "Nymphs Solution",
       role: "Junior Flutter Developer",
-      period: "Jan 2025 - Jul 2025",
+      period: "Feb 2025 - Jul 2025",
       description: "Developed and maintained mobile applications using Flutter and Dart."
     }
   ],
