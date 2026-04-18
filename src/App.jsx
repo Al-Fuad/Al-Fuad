@@ -86,8 +86,14 @@ const DATA = {
   ],
   experience: [
     {
+      company: "Softvence Agency",
+      role: "Jr. Flutter Developer",
+      period: "Apr 2026 - Present",
+      description: "Building and maintaining Flutter client applications with a focus on clean architecture and reliable delivery."
+    },
+    {
       company: "Nymphs Solution",
-      role: "Junior Flutter Developer",
+      role: "Jr. Flutter Developer",
       period: "Feb 2025 - Jul 2025",
       description: "Developed and maintained mobile applications using Flutter and Dart."
     }
@@ -166,7 +172,7 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-10">
-          {['About', 'Skills', 'Projects', 'History', 'Contact'].map((item) => (
+          {['About', 'Skills', 'Projects', 'Experience', 'Education', 'Contact'].map((item) => (
             <a key={item} href={`#${item.toLowerCase()}`} className="text-slate-400 hover:text-cyan-400 font-mono text-xs uppercase tracking-widest transition-colors">
               {item}
             </a>
@@ -195,7 +201,7 @@ const Navbar = () => {
             className="md:hidden bg-[#020617] border-b border-cyan-900/30 overflow-hidden absolute w-full left-0 top-full z-40"
           >
             <div className="flex flex-col p-8 gap-6 shadow-2xl">
-              {['About', 'Skills', 'Projects', 'History', 'Contact'].map((item) => (
+              {['About', 'Skills', 'Projects', 'Experience', 'Education', 'Contact'].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
@@ -354,51 +360,55 @@ const ProjectBento = () => (
 );
 
 const ExperienceTimeline = () => (
-  <section id="history" className="py-32 px-8 max-w-6xl mx-auto">
-    <div className="grid md:grid-cols-2 gap-16">
+  <section id="experience" className="py-32 px-8 max-w-6xl mx-auto">
+    <SectionHeader
+      title="Career Log"
+      code="WORK_HISTORY"
+      subtitle="Roles building Flutter clients with clean architecture and reliable delivery."
+    />
+    <div className="flex items-center gap-3 mb-10">
+      <Briefcase className="text-cyan-500" />
+      <h3 className="text-2xl font-black text-white uppercase tracking-tighter">Experience</h3>
+    </div>
+    <div className="space-y-12 relative border-l border-slate-800 pl-8 max-w-3xl">
+      {DATA.experience.map((exp, i) => (
+        <div key={i} className="relative group">
+          <div className="absolute -left-[37px] top-1 w-4 h-4 bg-slate-950 border border-cyan-500 group-hover:bg-cyan-500 transition-all shadow-[0_0_10px_rgba(34,211,238,0.2)]"></div>
+          <div className="mb-1 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 sm:gap-4">
+            <h4 className="text-lg font-bold text-white uppercase">{exp.role}</h4>
+            <span className="text-cyan-500 font-mono text-xs bg-cyan-500/5 px-2 py-1 rounded shrink-0">{exp.period}</span>
+          </div>
+          <div className="text-slate-400 font-bold text-sm mb-3 text-cyan-500/80 uppercase tracking-tighter">{exp.company}</div>
+          <p className="text-slate-500 text-sm font-mono leading-relaxed">{exp.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+);
 
-      {/* Experience Column */}
-      <div>
-        <div className="flex items-center gap-3 mb-10">
-          <Briefcase className="text-cyan-500" />
-          <h3 className="text-2xl font-black text-white uppercase tracking-tighter">Experience</h3>
+const EducationTimeline = () => (
+  <section id="education" className="py-32 px-8 max-w-6xl mx-auto border-t border-slate-800/60">
+    <SectionHeader
+      title="Academic Record"
+      code="EDU_DECRYPT"
+      subtitle="Formal training in software engineering with a cyber security focus."
+    />
+    <div className="flex items-center gap-3 mb-10">
+      <GraduationCap className="text-emerald-500" />
+      <h3 className="text-2xl font-black text-white uppercase tracking-tighter">Education</h3>
+    </div>
+    <div className="space-y-12 relative border-l border-slate-800 pl-8 max-w-3xl">
+      {DATA.education.map((edu, i) => (
+        <div key={i} className="relative group">
+          <div className="absolute -left-[37px] top-1 w-4 h-4 bg-slate-950 border border-emerald-500 group-hover:bg-emerald-500 transition-all shadow-[0_0_10px_rgba(16,185,129,0.2)]"></div>
+          <div className="mb-1 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 sm:gap-4">
+            <h4 className="text-lg font-bold text-white uppercase whitespace-pre-line">{edu.degree}</h4>
+            <span className="text-emerald-500 font-mono text-xs bg-emerald-500/5 px-2 py-1 rounded shrink-0">{edu.period}</span>
+          </div>
+          <div className="text-slate-400 font-bold text-sm mb-3 text-emerald-500/80 uppercase tracking-tighter">{edu.institution}</div>
+          <p className="text-slate-500 text-sm font-mono leading-relaxed">{edu.description}</p>
         </div>
-        <div className="space-y-12 relative border-l border-slate-800 pl-8">
-          {DATA.experience.map((exp, i) => (
-            <div key={i} className="relative group">
-              <div className="absolute -left-[37px] top-1 w-4 h-4 bg-slate-950 border border-cyan-500 group-hover:bg-cyan-500 transition-all shadow-[0_0_10px_rgba(34,211,238,0.2)]"></div>
-              <div className="mb-1 flex flex-col sm:flex-row sm:items-baseline sm:justify-between grid grid-cols-1 md:grid-cols-[2fr_1fr]">
-                <h4 className="text-lg font-bold text-white uppercase">{exp.role}</h4>
-                <span className="text-cyan-500 font-mono text-xs bg-cyan-500/5 px-2 py-1 rounded">{exp.period}</span>
-              </div>
-              <div className="text-slate-400 font-bold text-sm mb-3 text-cyan-500/80 uppercase tracking-tighter">{exp.company}</div>
-              <p className="text-slate-500 text-sm font-mono leading-relaxed">{exp.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Education Column */}
-      <div>
-        <div className="flex items-center gap-3 mb-10">
-          <GraduationCap className="text-emerald-500" />
-          <h3 className="text-2xl font-black text-white uppercase tracking-tighter">Education</h3>
-        </div>
-        <div className="space-y-12 relative border-l border-slate-800 pl-8">
-          {DATA.education.map((edu, i) => (
-            <div key={i} className="relative group">
-              <div className="absolute -left-[37px] top-1 w-4 h-4 bg-slate-950 border border-emerald-500 group-hover:bg-emerald-500 transition-all shadow-[0_0_10px_rgba(16,185,129,0.2)]"></div>
-              <div className="mb-1 flex flex-col sm:flex-row sm:items-baseline sm:justify-between grid grid-cols-1 md:grid-cols-[2fr_1fr]">
-                <h4 className="text-lg font-bold text-white uppercase">{edu.degree}</h4>
-                <span className="text-emerald-500 font-mono text-xs bg-emerald-500/5 px-2 py-1 rounded">{edu.period}</span>
-              </div>
-              <div className="text-slate-400 font-bold text-sm mb-3 text-emerald-500/80 uppercase tracking-tighter">{edu.institution}</div>
-              <p className="text-slate-500 text-sm font-mono leading-relaxed">{edu.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
+      ))}
     </div>
   </section>
 );
@@ -481,6 +491,7 @@ export default function App() {
         <SkillGrid />
         <ProjectBento />
         <ExperienceTimeline />
+        <EducationTimeline />
         <Contact />
       </main>
 
