@@ -177,7 +177,7 @@ const Navbar = () => {
               {item}
             </a>
           ))}
-          <a href="https://drive.google.com/uc?export=download&id=1y8pbtnGKlb8Zfs3Bl7hOHOD3iGT7Htp5" className="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-6 py-2 rounded-sm font-bold text-xs uppercase tracking-tighter transition-all flex items-center gap-2">
+          <a href="https://drive.google.com/file/d/1iUtliPs7SRnWz8_6RK9MxRnaKgW2ytT_/view?usp=sharing" className="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-6 py-2 rounded-sm font-bold text-xs uppercase tracking-tighter transition-all flex items-center gap-2">
             <Download size={14} /> Resume.pdf
           </a>
         </div>
