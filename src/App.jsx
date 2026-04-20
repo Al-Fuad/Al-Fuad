@@ -40,8 +40,8 @@ const DATA = {
       tags: ["Flutter", "Firebase", "GetX"],
       size: "large",
       image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1000&auto=format&fit=crop",
-      github: "https://github.com/Al-Fuad/e_commerce_with_flutter",
-      demo: "https://github.com/Al-Fuad/e_commerce_with_flutter"
+      github: "https://github.com/Al-Fuad/E-commerce",
+      demo: "https://github.com/Al-Fuad/E-commerce"
     },
     {
       title: "Flutter Packages/Plugins",
