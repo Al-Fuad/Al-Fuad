@@ -36,8 +36,8 @@ const DATA = {
     {
       title: "Ecommerce",
       type: "Mobile Commerce UI",
-      description: "A ecommerce application ui. Built with Flutter, Firebase and GetX for state management.",
-      tags: ["Flutter", "Firebase", "GetX"],
+      description: "E-commerce applications ui. Built with Flutter, Firebase, GetX, MVC and Clean Architecture.",
+      tags: ["Flutter", "Firebase", "GetX", "MVC", "CleanArch"],
       size: "large",
       image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1000&auto=format&fit=crop",
       github: "https://github.com/Al-Fuad/E-commerce",
