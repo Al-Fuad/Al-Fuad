@@ -30,7 +30,7 @@ const DATA = {
   skills: [
     { category: "Mobile Core", items: ["Dart", "Flutter", "Swift", "State Management(BLoC, GetX)"], icon: <Smartphone className="w-5 h-5" />, color: "cyan" },
     { category: "Security & RASP", items: ["App Security", "Reverse Engineering", "OWASP", "Encryption"], icon: <ShieldCheck className="w-5 h-5" />, color: "emerald" },
-    { category: "Full Stack", items: ["Node.js", "Django", "React.js", "Firebase", "Supabase"], icon: <Cpu className="w-5 h-5" />, color: "indigo" }
+    { category: "Full Stack", items: ["Node.js", "FastAPI", "React.js", "Firebase", "Supabase"], icon: <Cpu className="w-5 h-5" />, color: "indigo" }
   ],
   projects: [
     {
@@ -88,7 +88,7 @@ const DATA = {
     {
       company: "Softvence Agency",
       role: "Jr. Flutter Developer",
-      period: "Apr 2026 - Present",
+      period: "Apr 2026 - May 2026",
       description: "Building and maintaining Flutter client applications with a focus on clean architecture and reliable delivery."
     },
     {
@@ -177,7 +177,7 @@ const Navbar = () => {
               {item}
             </a>
           ))}
-          <a href="https://drive.google.com/file/d/1iUtliPs7SRnWz8_6RK9MxRnaKgW2ytT_/view?usp=sharing" className="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-6 py-2 rounded-sm font-bold text-xs uppercase tracking-tighter transition-all flex items-center gap-2">
+          <a href="https://drive.google.com/file/d/1m5Ph5sD6p54_P21zx4POUCTua_VY1U-K/view?usp=sharing" className="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-6 py-2 rounded-sm font-bold text-xs uppercase tracking-tighter transition-all flex items-center gap-2">
             <Download size={14} /> Resume.pdf
           </a>
         </div>
@@ -212,7 +212,7 @@ const Navbar = () => {
                 </a>
               ))}
               <div className="h-[1px] bg-slate-800 my-2"></div>
-              <a href="https://drive.google.com/uc?export=download&id=1y8pbtnGKlb8Zfs3Bl7hOHOD3iGT7Htp5" className="bg-cyan-500 text-slate-950 px-6 py-4 rounded-sm font-bold text-sm uppercase tracking-tighter flex items-center justify-center gap-2 w-full hover:bg-white transition-colors">
+              <a href="https://drive.google.com/file/d/1m5Ph5sD6p54_P21zx4POUCTua_VY1U-K/view?usp=sharing" className="bg-cyan-500 text-slate-950 px-6 py-4 rounded-sm font-bold text-sm uppercase tracking-tighter flex items-center justify-center gap-2 w-full hover:bg-white transition-colors">
                 <Download size={16} /> Download Resume
               </a>
             </div>
