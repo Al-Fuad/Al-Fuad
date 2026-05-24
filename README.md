@@ -31,7 +31,7 @@ With a strong academic foundation in **Software Engineering (Major in Cyber Secu
 
 | Role | Company | Duration |
 | :--- | :--- | :--- |
-| **Jr. Flutter Developer** | **Softvence Agency** | *April 2026 – Present* |
+| **Jr. Flutter Developer** | **Softvence Agency** | *Apr 2026 – May 2026* |
 | **Jr. Flutter Developer** | **Nymphs Solution** | *Feb 2025 – Jul 2025* |
 
 ---
