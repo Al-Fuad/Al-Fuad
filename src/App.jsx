@@ -88,7 +88,7 @@ const DATA = {
     {
       company: "Softvence Agency",
       role: "Jr. Flutter Developer",
-      period: "Apr 2026 - May 2026",
+      period: "Apr 2026 - Jun 2026",
       description: "Building and maintaining Flutter client applications with a focus on clean architecture and reliable delivery."
     },
     {
